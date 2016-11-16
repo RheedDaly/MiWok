@@ -19,16 +19,16 @@ public class PhrasesActivity extends AppCompatActivity {
 
         ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("One", "Lutti"));
-        words.add(new Word("Two", "Otiiko"));
-        words.add(new Word("Three", "Tolookosu"));
-        words.add(new Word("Four", "Oyyisa"));
-        words.add(new Word("Five", "Massokka"));
-        words.add(new Word("Six", "Temmokka"));
-        words.add(new Word("Seven", "Kenekaku"));
-        words.add(new Word("Eight", "Kawinta"));
-        words.add(new Word("Nine", "Wo'e"));
-        words.add(new Word("Ten", "Na'aacha"));
+        words.add(new Word("Where are you going?", "Minto wuksus"));
+        words.add(new Word("What is your name?", "Tinne oyaase'ne"));
+        words.add(new Word("My name is...", "Oyaaset..."));
+        words.add(new Word("How are you feeling?", "Michekses?"));
+        words.add(new Word("I'm feeling good.", "Kuchi achit"));
+        words.add(new Word("Are you coming?", "eenes'aa?"));
+        words.add(new Word("Yes, I'm coming", "hee' eenem"));
+        words.add(new Word("I'm coming.", "eenem"));
+        words.add(new Word("Let's go.", "Yoowutis"));
+        words.add(new Word("Come here.", "enni'nem"));
 
         WordAdapter itemsAdapter = new WordAdapter(this, words);
 

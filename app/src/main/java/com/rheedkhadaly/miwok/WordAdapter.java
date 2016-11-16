@@ -22,7 +22,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
     TextToSpeech tts;
 
     static class ViewHolder {
-
+        ImageView defaultImageView;
         TextView miwokTextView;
         TextView defaultTextView;
     }
@@ -47,6 +47,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
             holder = new ViewHolder();
 
+            holder.defaultImageView = (ImageView) convertView.findViewById(R.id.default_image_view);
             holder.miwokTextView = (TextView) convertView.findViewById(R.id.miwok_text_view);
             holder.defaultTextView = (TextView) convertView.findViewById(R.id.default_text_view);
 
@@ -64,6 +65,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
             }
         });
 
+        holder.defaultImageView.setImageResource(currentWord.getmImageResourceId());
         holder.miwokTextView.setText(currentWord.getmMiwokTranslation());
         holder.defaultTextView.setText(currentWord.getmDefaultTranslation());
 
