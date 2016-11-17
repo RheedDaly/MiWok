@@ -25,6 +25,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".FamilyActivity"
+            android:label="@string/category_family">
+            <intent-filter>
+                <action android:name="com.rheedkhadaly.miwok.FAMILYACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ColorActivity"
             android:label="@string/category_colors">
             <intent-filter>
